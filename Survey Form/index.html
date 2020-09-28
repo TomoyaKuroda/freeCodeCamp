@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script defer src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="./scripts/script.js"></script>
+</head>
+
+<body>
+    <div class="container my-4">
+        <h1 class="text-center text-uppercase" id="title">Contact us</h1>
+        <p class="h5 text-center" id="description">Please fill out the form below</p>
+    </div>
+    <div class="container">
+        <form class="row g-3" action="" id="survey-form">
+            <div class="d-flex flex-column-reverse col-md-6 position-relative mb-3">
+                <input id="name" name="name" type="text" class="form-control rounded-0" required
+                    placeholder="Enter your name">
+                <label class="form-label" for="name" id="name-label">Name</label>
+            </div>
+            <div class="d-flex flex-column-reverse col-md-6 position-relative mb-3">
+                <input id="email" name="email" type="email" class="form-control rounded-0" required
+                    placeholder="Enter your email">
+                <label class="form-label" for="email" id="email-label">Email</label>
+            </div>
+            <div class="d-flex flex-column-reverse col-md-6 position-relative mb-3">
+                <input id="number" name="number" type="number" min="0" max="200" class="form-control rounded-0" required
+                    placeholder="Enter your age">
+                <label class="form-label" for="number" id="number-label">Age</label>
+            </div>
+            <div class="d-flex flex-column-reverse col-md-6 position-relative mb-3">
+                <select id="dropdown" name="dropdown" class="form-select" aria-label="How did you find this form?"
+                    onchange="showFormSelectLabel(event)">
+                    <option class="d-none" value="" disabled selected>How did you find this form?</option>
+                    <option value="Google">Google</option>
+                    <option value="Referral">Referral</option>
+                    <option value="other">Other</option>
+                </select>
+                <label class="form-label form-select-label" for="dropdown">How did you find this form?</label>
+            </div>
+            <fieldset class="col-12 m-0">
+                <legend>Sex</legend>
+                <div class="col-md-6 form-check mb-3">
+                    <input class="form-check-input" type="radio" name="sex" id="male" value="male" hecked>
+                    <label class="form-check-label" for="male">
+                        Male
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="sex" id="female" value="female">
+                    <label class="form-check-label" for="female">
+                        Female
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset class="col-12 m-0">
+                <legend>What kind of contents would you like to see?</legend>
+                <div class="form-check col-md-6 mb-3">
+                    <input class="form-check-input" type="checkbox" value="programming" id="programming"
+                        name="contents">
+                    <label class="form-check-label" for="programming">
+                        Programming
+                    </label>
+                </div>
+                <div class="form-check col-md-6 mb-3">
+                    <input class="form-check-input" type="checkbox" value="English" id="english" name="contents">
+                    <label class="form-check-label" for="english">
+                        English
+                    </label>
+                </div>
+                <div class="form-check col-md-6 mb-3">
+                    <input class="form-check-input" type="checkbox" value="Game" id="game" name="contents">
+                    <label class="form-check-label" for="game">
+                        Game
+                    </label>
+                </div>
+            </fieldset>
+            <div class="d-flex flex-column-reverse col-12 position-relative mb-3">
+                <textarea id="comment" name="comment" type="text" class="form-control rounded-0" required
+                    placeholder="Enter comment"></textarea>
+                <label class="form-label" for="comment" id="comment-label">Comment</label>
+            </div>
+            <div class="d-flex flex-column-reverse col-md-2 position-relative mb-3">
+                <button class="btn btn-primary rounded-0" type="submit" form="survey-form" id="submit"
+                    value="Submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

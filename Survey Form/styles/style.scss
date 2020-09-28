@@ -1,0 +1,45 @@
+@import 'bootstrap/bootstrap';
+
+.form-control:placeholder-shown + .form-label, .form-select-label{
+    top: 50%;
+    transform: translateY(-50%) scale(1.2);
+    transition: all 0.2s;
+    left: 1rem;
+    padding-left: 0.5rem;
+}
+
+.form-label, .form-control:focus+.form-label, .form-select-label.show, form-control:not(:placeholder-shown) + .form-label, {
+    position: absolute;
+    transform: translate(0, 0) scale(1);
+    cursor: pointer;
+    top: -1.5em;
+    left: 0.5rem;
+    padding: 0;
+}
+
+.form-control::-webkit-input-placeholder {
+    opacity: 0;
+    transition: inherit;
+}
+
+.form-control:focus::-webkit-input-placeholder {
+    opacity: 1;
+}
+
+.form-select-label{
+    // display: none;
+    opacity: 0;
+    transition: all 0.2s, opacity 0s;
+}
+
+.form-select-label.show{
+    opacity: 1;
+    // display: inline;
+    // animation: showFormSelectLabel 0.2s forwards;
+}
+
+// @keyframes showFormSelectLabel{
+//     0%{display: none; opacity: 0;}
+//     1%{display: inline; opacity: 0;}
+//     100%{display: inline; opacity: 1;}
+// }
