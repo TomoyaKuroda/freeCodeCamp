@@ -1,2 +1,2 @@
 <p>Link</p>
-<a href="https://tomoyakuroda.github.io/freeCodeCamp/TributePage/">https://tomoyakuroda.github.io/freeCodeCamp/TributePage/</a>
+<a href="https://tomoyakuroda.github.io/freeCodeCamp/TributePage/index.html">https://tomoyakuroda.github.io/freeCodeCamp/TributePage/index.html</a>
