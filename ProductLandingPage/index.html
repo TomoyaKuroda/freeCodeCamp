@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script defer src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script defer  src="./scripts/script.js"></script>
+</head>
+
+<body>
+    <header class='container d-flex justify-content-between align-items-center fixed-top' id="header">
+        <img src="./images/logo.png" alt="logo" height='64' id="header-img" >
+        <nav class='d-flex align-items-center' id="nav-bar">
+            <a class="nav-link" href="#main">Main</a>
+            <a class='nav-link' href="#feature">Feature</a>
+            <a class="nav-link" href="#form">Form</a>
+        </nav>
+    </header>
+    <main class='container d-flex justify-content-center flex-column align-items-center mt-5' id="main">
+        <div id="feature" class='py-5'>
+            <iframe id="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/6LQU1W9eMQ0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <form class=mt-4 id="form" action="https://www.freecodecamp.org/email-submit">
+            <label for="email">Email</label>
+            <input name='email' id="email" type="email" placeholder='youremail@email.com'>
+            <input type="submit" id="submit" value="submit">
+        </form>
+    </main>
+</body>
+
+</html>
