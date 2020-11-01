@@ -1,0 +1,9 @@
+@import 'bootstrap/bootstrap';
+
+
+@include media-breakpoint-up(lg) {  
+    #navbar{
+        position: fixed;
+    }
+    
+}
