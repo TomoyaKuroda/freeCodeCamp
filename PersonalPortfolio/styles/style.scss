@@ -1,0 +1,84 @@
+@import 'bootstrap/bootstrap';
+
+
+body, html, main {
+    /* important */
+    height: 100%;
+    overflow-x: hidden;
+}
+  
+.cd-fixed-bg {
+    min-height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.cd-fixed-bg.cd-bg-1 {
+  background-image: url("https://i.imgur.com/86PrVlF.jpg");
+  position:relative;
+
+}
+.cd-fixed-bg.cd-bg-2 {
+  background-image: url("https://i.imgur.com/ogzJezO.jpg");
+  position:relative;
+}
+
+  
+.cd-scrolling-bg {
+    min-height: 100%;
+}
+
+.title{
+    position:absolute;
+    top: 40%;
+    width: 800px;
+    padding: 20px;
+    color: #E0F1C4; 
+    background-color: rgba(27,86,141,0.5);
+}
+.title2{
+    position:absolute;
+    top: 40%;
+    width: 800px;
+    padding: 20px;
+    color: rgb(228,206,174);
+    background-color: rgba(28,44,113,0.7);
+}
+.cd-color-1{
+    background-color: rgb(30,91,97);
+    color: rgb(250,232,187);
+    padding: 20px;
+}
+.cd-color-2{
+    background-color: rgb(245,245,196);
+    color: rgb(44,31,96);
+    padding: 20px;
+}
+.pictures{
+    width: 80%;
+    height: 40vh;
+    border-radius: 10px;
+    padding-bottom: 20px; 
+}
+p{
+    font-size: 24px;
+}
+nav{
+    display: flex;
+    flex-direction:column;
+    position:fixed;
+    top:40vh;
+    right:20px;
+    z-index:999;
+   
+    padding: 0px;
+}
+
+ul{
+    list-style:none;
+}
+
+
+
