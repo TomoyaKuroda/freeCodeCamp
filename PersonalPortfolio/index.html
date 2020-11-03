@@ -1,85 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class='h-100' lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <script defer src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <script defer src="./scripts/script.js"></script>
 </head>
 
-<body>
-    <main>
-        <nav>
-            <ul>
-                <li>
-                    <a id="gototop" href="#welcome-section">
-                        <button class="btn btn-info btn-block" id="topButton">
-                            Top</button></a></li>
-                <li>
-                    <a id="gotointroduction" href="#introduction">
-                        <button class="btn btn-info btn-block" id="introductionButton">Introduction
-                        </button></a></li>
-                <li>
-                    <a id="gotoportfolio" href="#portfolio">
-                        <button class="btn btn-info btn-block" id="portfolioButton">Portfolio</button>
-                    </a></li>
-            </ul>
-
-        </nav>
-
-        <section class="cd-fixed-bg cd-bg-1" id="welcome-section">
-            <h1 class="text-center title">Welcome to My Portfolio</h1>
-        </section>
-
-        <div class="cd-scrolling-bg cd-color-1" id="projects">
-            <div class="container">
-                <div class="row" id="project-tile">
-                    <div class="col-lg-4">
-                        <p>
-                            Hello. My name is Kunikazu Tayama. I enjoy programming. It's so fun!
-                        </p>
-                        <p>
-                            One of my favorite activities is climbing. I love taking awesome pictures.
-                        </p>
-                    </div>
-                    <div class="col-lg-8">
-                        <img class="img-responsive pictures" src="https://i.imgur.com/vMIntOb.jpg">
-                        <img class="img-responsive pictures" src="https://i.imgur.com/m7xrBM5.jpg">
-
-                    </div>
-                </div>
-
-            </div>
+<body class='h-100'>
+    <nav class='fixed-top bg-light' id="navbar">
+        <ul class='list-unstyled d-flex justify-content-end align-items-center my-2'>
+            <li class='mx-4'><a class="text-decoration-none" href="#projects">Projects</a></li>
+            <li class='mx-4'><a class="text-decoration-none" href="https://github.com/TomoyaKuroda" id="profile-link" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        </ul>
+    </nav>
+    <section class='h-100 d-flex align-items-center justify-content-center flex-column' id="welcome-section">
+        <h1>Tomoya Kuroda</h1>
+        <h2 class="h4 animate__animated animate__lightSpeedInLeft animate__delay-1s">Full Stack Developer</h2>
+    </section>
+    <section class='h-100 d-flex flex-column align-items-center py-5' id="projects">
+        <h3>Projects</h3>
+        <div class="project-tile">
+            <a class='text-decoration-none' href="https://tomoyakuroda.github.io/freeCodeCamp/MarkdownPreviewer/build/index.html" target="_blank" rel="noopener noreferrer">Markdown Previewer</a>
         </div>
+    </section>
 
-        <div class="cd-fixed-bg cd-bg-2" id="portfolio">
-            <h1 class="text-center title2">My programming skills</h1>
-        </div>
-
-        <div class="cd-scrolling-bg cd-color-2">
-            <div class="cd-container">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <p>
-                            I studied Java, C, C#, HTML, CSS, JavaScript, PHP, and MySQL.
-                        </p>
-                        <p>I'm familiar with Unity and Android Apps Development. </p>
-                        <a class="btn btn-block btn-social btn-twitter" href="https://twitter.com/kunikazutayama"
-                            target="_blank">
-                            <span class="fa fa-twitter"></span> My Twitter account
-                        </a>
-                    </div>
-                    <div class="col-lg-8">
-                        <img class="img-responsive pictures" src="https://i.imgur.com/mvUb0g5.jpg">
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </main>
 </body>
 
 </html>
